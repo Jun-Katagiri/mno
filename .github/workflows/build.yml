@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -B build -S .
+      
+      - name: Build
+        run: cmake --build build
+
+      - name: Smoke Test
+        run: ./build/mno add "CI test note"
+
+        
