@@ -1,0 +1,26 @@
+# CMakeのout-of-sourceビルド生成物
+build/
+cmake-build-*/
+
+# CMake関連のキャッシュ（誤って in-source build した場合の保健）
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# コンパイル生成物
+*.o
+*.obj
+*.exe
+*.out
+
+# Doxygenの生成物（コミットせず、CIで都度生成する）
+docs/api/generated/
+
+# エディタとIDEの設定ファイル
+.vscode/
+*.swp
+
+# OS 由来
+*.DS_Store
+
