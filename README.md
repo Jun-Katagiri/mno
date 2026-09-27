@@ -1,1 +1,1 @@
-# mno - note management tool
+# mno - simple note CLI, mno - note management tool
