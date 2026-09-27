@@ -1,0 +1,1 @@
+# mno - simple note CLI
